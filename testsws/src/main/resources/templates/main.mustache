@@ -1,0 +1,24 @@
+<html>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="e-mail"/>
+        <input type="text" name="text" placeholder="Фамилия"/>
+        <input type="text" name="text" placeholder="Имя"/>
+        <input type="text" name="text" placeholder="Отчество"/>
+        <input type="text" name="text" placeholder="Тел:"/>
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+<div> Данные о пользователях</div>
+{{#users}}
+    <div>
+        <span>{{email}}</span>
+        <span>{{surname}}</span>
+        <span>{{name}}</span>
+        <span>{{patronymic}}</span>
+        <span>{{telephone}}</span>
+    </div>
+{{/users}}
+</body>
+</html>
